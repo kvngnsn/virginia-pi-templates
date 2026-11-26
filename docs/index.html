@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virginia PI Templates</title>
+<meta name="description" content="Browse, preview, download and fill 222 Virginia personal-injury drafting templates. Runs offline; nothing is sent anywhere.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Open drafting library · Virginia personal injury</p>
+    <h1>Virginia PI Templates</h1>
+    <p class="lede"><span id="count">222</span> reviewed drafting templates for pleadings, discovery, letters, liens and settlement. Preview, download the Word file, or fill the bracketed fields right here.</p>
+    <p class="notice" role="note"><strong>Not legal advice.</strong> Every output is a draft for attorney review. Verify against current statutes, rules and local practice. Text as of <span id="asof">2026-09-21</span>. Values you type stay in this tab; nothing is sent or saved.</p>
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" class="tab" data-view="templates" aria-pressed="true">Templates</button>
+      <button type="button" class="tab" data-view="routes" aria-pressed="false">Routes without drafts</button>
+      <button type="button" class="tab" data-view="about" aria-pressed="false">How to use</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section id="view-templates" class="view">
+    <div class="browser">
+      <aside class="catalog" aria-label="Template list">
+        <div class="filters">
+          <label class="field">
+            <span>Search</span>
+            <input id="q" type="search" placeholder="e.g. medicare, deposition, release" autocomplete="off">
+          </label>
+          <div class="filter-row">
+            <label class="field"><span>Category</span><select id="f-cat"><option value="">All categories</option></select></label>
+            <label class="field"><span>Layout</span><select id="f-layout"><option value="">All layouts</option></select></label>
+          </div>
+          <label class="field"><span>Court</span><select id="f-court"><option value="">Any court or none</option></select></label>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+        <ol class="list" id="list"></ol>
+      </aside>
+
+      <article class="detail" id="detail" aria-live="polite">
+        <div class="empty" id="empty">
+          <h2>Pick a template</h2>
+          <p>Search or filter the list, then choose a template to preview it, download the reviewed Word file, or fill its bracketed fields.</p>
+          <p class="muted">Bracketed text such as <code>[PLAINTIFF FULL NAME]</code> marks facts that must come from the case. Unknown fields stay bracketed.</p>
+        </div>
+        <div id="doc" hidden>
+          <button type="button" class="back" id="back">Back to list</button>
+          <p class="eyebrow" id="d-cat"></p>
+          <h2 id="d-title"></h2>
+          <dl class="meta">
+            <div><dt>Command</dt><dd><code id="d-cmd"></code></dd></div>
+            <div><dt>Court</dt><dd id="d-court"></dd></div>
+            <div><dt>Layout</dt><dd id="d-layout"></dd></div>
+            <div><dt>Blank pages</dt><dd id="d-pages"></dd></div>
+          </dl>
+          <p class="scope" id="d-scope"></p>
+          <div class="actions">
+            <a class="btn primary" id="d-docx" download>Download .docx</a>
+            <button type="button" class="btn" id="d-md">Download .md</button>
+            <button type="button" class="btn" id="d-copy">Copy text</button>
+            <a class="btn quiet" id="d-reason" rel="noopener">Reasoning and sources</a>
+          </div>
+          <div class="subtabs" role="tablist">
+            <button type="button" role="tab" class="subtab" id="st-preview" aria-selected="true" aria-controls="pane-preview">Preview</button>
+            <button type="button" role="tab" class="subtab" id="st-fill" aria-selected="false" aria-controls="pane-fill">Fill fields <span class="pill" id="field-count"></span></button>
+          </div>
+          <div id="pane-preview" role="tabpanel">
+            <div class="paper" id="preview"></div>
+          </div>
+          <div id="pane-fill" role="tabpanel" hidden>
+            <p class="muted">Fill only facts you have. Empty fields stay bracketed and are listed below. Where one field appears in different places, open “different values by place” to set them separately.</p>
+            <form class="fill-form" id="fill-form" autocomplete="off"></form>
+            <div class="fill-actions">
+              <button type="button" class="btn primary" id="f-copy">Copy filled text</button>
+              <button type="button" class="btn" id="f-download">Download filled .md</button>
+              <button type="button" class="btn quiet" id="f-clear">Clear</button>
+            </div>
+            <div class="unresolved" id="unresolved"></div>
+            <h3 class="paper-label">Filled draft</h3>
+            <div class="paper" id="filled"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="view-routes" class="view" hidden>
+    <h2>Routes without drafts</h2>
+    <p class="muted">These catalog entries are deliberately not drafting templates: official forms, clerk-issued process, agency processes, specialist work, procedure choices and aliases. Each says what to use instead. Verify current forms and procedures with the publisher.</p>
+    <label class="field narrow"><span>Search routes</span><input id="rq" type="search" autocomplete="off" placeholder="e.g. summons, trust, 1099"></label>
+    <div id="routes"></div>
+  </section>
+
+  <section id="view-about" class="view prose" hidden>
+    <h2>How to use these templates</h2>
+    <ol>
+      <li><strong>Pick the template by purpose and court.</strong> Each template states its scope. Court papers marked “Virginia Circuit Court” are drafted for that court only.</li>
+      <li><strong>Fill only supported facts.</strong> Replace a bracketed field only with a fact from the case file, an order, or counsel. Leave anything unknown in brackets.</li>
+      <li><strong>Never invent</strong> facts, dates, amounts, citations, service, signatures, consent or deadlines. Check any citation you add.</li>
+      <li><strong>Keep the layout profile.</strong> Court papers are double-spaced with a caption; letters and plain documents are single-spaced; appellate briefs use at least 14-point type with cover, front matter and body sections.</li>
+      <li><strong>Have a Virginia attorney review</strong> the draft before it is sent, signed or filed.</li>
+    </ol>
+    <h3>Line format</h3>
+    <p>Template text is line-oriented: <code># Title</code> and <code>## Heading</code> lines, <code>1.</code> numbered paragraphs, caption rows split by <code>|</code> (left party text, right case number), and markers <code>&lt;!-- pagebreak --&gt;</code>, <code>&lt;!-- frontmatter --&gt;</code> and <code>&lt;!-- body --&gt;</code>. The Word files already apply this layout. To turn a filled draft into a .docx, use <code>scripts/fill_template.py</code> from the repository.</p>
+    <h3>Privacy</h3>
+    <p>This page works offline from static files. It makes no network requests and stores nothing. Do not paste protected health information into tools or services you are not authorized to use.</p>
+    <p class="muted">MIT licensed. Template text is offered as-is for reuse.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Drafts for attorney review. Not legal advice. Template text and sources as of the source snapshot verified 2026-09-21.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

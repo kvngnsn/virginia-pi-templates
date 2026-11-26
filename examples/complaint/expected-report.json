@@ -1,0 +1,26 @@
+{
+ "template": "/complaint",
+ "title": "Complaint",
+ "layout": "COURT",
+ "unresolved": [
+  {
+   "name": "JURISDICTIONAL FACTS AND BASIS",
+   "count": 1
+  },
+  {
+   "name": "SUBSECTION",
+   "count": 1
+  },
+  {
+   "name": "SPECIFIC AMOUNT",
+   "count": 1
+  },
+  {
+   "name": "NUMBER IF REGULARLY USED",
+   "count": 1
+  }
+ ],
+ "markdown": "expected-draft.md",
+ "docx": null,
+ "warnings": []
+}

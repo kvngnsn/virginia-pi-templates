@@ -1,0 +1,26 @@
+{
+ "template": "/rep-adverse",
+ "title": "Notice of Representation to Liability Insurer",
+ "layout": "LETTER",
+ "unresolved": [
+  {
+   "name": "DATE",
+   "count": 1
+  },
+  {
+   "name": "RECIPIENT NAME AND TITLE",
+   "count": 1
+  },
+  {
+   "name": "DELIVERY ADDRESS",
+   "count": 1
+  },
+  {
+   "name": "RECIPIENT",
+   "count": 1
+  }
+ ],
+ "markdown": "expected-draft.md",
+ "docx": null,
+ "warnings": []
+}

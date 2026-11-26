@@ -1,0 +1,605 @@
+[
+ {
+  "command": "/1099-atty",
+  "slug": "1099-atty",
+  "title": "Attorney Payment Information Returns",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "Use the correct tax-year IRS information-return process. Distinguish payment for legal services (potential Form 1099-NEC) from gross proceeds paid to an attorney (potential Form 1099-MISC); the payee, payer, payment type and reporting year control. Gross-proceeds reporting is not a statement of the attorney’s taxable fee. Have the responsible payer verify current instructions, reporting thresholds, taxpayer information and electronic or scannable filing requirements. This route links instructions; it does not generate or file a tax return.",
+  "official_link": "https://www.irs.gov/instructions/i1099mec",
+  "reasoning": "reasoning/routes/1099-atty.md"
+ },
+ {
+  "command": "/1099-taxable",
+  "slug": "1099-taxable",
+  "title": "Settlement Information Return Selection",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "Identify each actual settlement component and the responsible payer before selecting the applicable tax-year IRS form. A taxable nonwage payment, attorney gross proceeds, interest and wages can require different reporting; taxable wages use the wage-reporting process. An information return does not decide the recipient’s tax treatment. Use the current official instructions and supported allocation; no return is filled or filed by this route.",
+  "official_link": "https://www.irs.gov/government-entities/tax-implications-of-settlements-and-judgments",
+  "reasoning": "reasoning/routes/1099-taxable.md"
+ },
+ {
+  "command": "/abstract",
+  "slug": "abstract",
+  "title": "Clerk Certified Abstract of Judgment",
+  "kind": "clerk-process",
+  "kind_label": "Clerk-issued process",
+  "what_to_do": "Request the certified abstract from the clerk of the court that entered the judgment and follow the receiving clerk’s docketing requirements. CC-1407 is a service form, not an abstract. A drafted Word document cannot supply the clerk’s certification.",
+  "reasoning": "reasoning/routes/abstract.md"
+ },
+ {
+  "command": "/acceptance-service",
+  "slug": "acceptance-service",
+  "title": "Acceptance of Service / Waiver",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1406); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1406"
+ },
+ {
+  "command": "/affidavit-service",
+  "slug": "affidavit-service",
+  "title": "Affidavit for Service on Secretary",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1418); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1418"
+ },
+ {
+  "command": "/annuity",
+  "slug": "annuity",
+  "title": "Obtain Issued Annuity Confirmation",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Obtain the issued contract or confirmation from the actual annuity issuer or authorized structured-settlement provider. Reconcile the legal issuer, owner, payee, funding receipt, contract number, guaranteed and contingent payments, beneficiary terms and any court order. A quote or drafted confirmation is not proof of purchase. Use /structured-settlement for the separately reviewed payment addendum; that draft does not establish issuance or funding.",
+  "official_link": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section130&num=0&edition=prelim",
+  "reasoning": "reasoning/routes/annuity.md"
+ },
+ {
+  "command": "/attorney-lien",
+  "slug": "attorney-lien",
+  "title": "Notice of Claim of Lien for Attorney Fees",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1480); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1480"
+ },
+ {
+  "command": "/bank-levy",
+  "slug": "bank-levy",
+  "title": "Bank Garnishment Process",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "For a Virginia Circuit Court bank garnishment, confirm the enforceable judgment and statutory prerequisites, prepare the creditor’s suggestion through /garnishment-suggestion, and obtain properly issued and served process. See the /garnishment official-form entry. Include the required exemption notice; a bank-levy letter alone does not levy an account. For another court, use that court’s forms and clerk process.",
+  "official_link": "https://www.vacourts.gov/forms/circuit/civil",
+  "reasoning": "reasoning/routes/bank-levy.md"
+ },
+ {
+  "command": "/cert-parties",
+  "slug": "cert-parties",
+  "title": "Court-Specific Disclosure Selection",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "Identify the court and the actual rule or order requesting a corporate, ownership, conflict or interested-party disclosure. Certificate of Interested Entities is not a universal Virginia civil pleading requirement. Use the court’s required form and disclose only supported facts for the required persons/entities. Federal and out-of-state disclosure rules need their own review; no generic certificate is generated from this ambiguous command.",
+  "official_link": "https://www.vacourts.gov/forms/circuit/civil",
+  "reasoning": "reasoning/routes/cert-parties.md"
+ },
+ {
+  "command": "/confess-judgment",
+  "slug": "confess-judgment",
+  "title": "Confession of Judgment / Certificate of Clerk",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1420); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1420"
+ },
+ {
+  "command": "/courthouse",
+  "slug": "courthouse",
+  "title": "Look up / confirm courthouse for this case",
+  "kind": "not-included",
+  "kind_label": "Not included in this library",
+  "what_to_do": "A courthouse lookup utility in the source app. Not included. Confirm the court, clerk and filing address from the court's official website."
+ },
+ {
+  "command": "/coversheet",
+  "slug": "coversheet",
+  "title": "Civil Case Cover Sheet",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1416); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1416"
+ },
+ {
+  "command": "/cross-complaint",
+  "slug": "cross-complaint",
+  "title": "Select Counterclaim or Crossclaim",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "Choose the pleading from the relationship between the parties: /counterclaim for a claim against an opposing party under Virginia Rule 3:9; /crossclaim for a qualifying claim against a co-party under Rule 3:10. A claim involving a new third party requires separate impleader/joining analysis. Cross-complaint is too ambiguous to map automatically. Confirm the parties, claim and service requirements before selecting the template.",
+  "official_link": "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf",
+  "reasoning": "reasoning/routes/cross-complaint.md"
+ },
+ {
+  "command": "/damages",
+  "slug": "damages",
+  "title": "Calculate damages summary",
+  "kind": "not-included",
+  "kind_label": "Not included in this library",
+  "what_to_do": "A damages calculator in the source app. Not included. Damages figures must come from case records and counsel."
+ },
+ {
+  "command": "/debtorexam",
+  "slug": "debtorexam",
+  "title": "Summons for Judgment Debtor Interrogatories",
+  "kind": "clerk-process",
+  "kind_label": "Clerk-issued process",
+  "what_to_do": "Use the actual court’s judgment-debtor interrogatory process under Virginia Code § 8.01-506. For Circuit Court, CC-1481 is the official summons; the authorized clerk or commissioner issues it. See the /summons-interrogatories official-form entry. A generic debtor-examination order is not a substitute for issued process.",
+  "official_link": "https://www.vacourts.gov/static/forms/circuit/cc1481.pdf",
+  "reasoning": "reasoning/routes/debtorexam.md"
+ },
+ {
+  "command": "/default-request",
+  "slug": "default-request",
+  "title": "Virginia Default Procedure Selection",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "In Virginia Circuit Court, Rule 3:19(a) places a defendant in default upon failure to file a timely responsive pleading; do not import a separate federal clerk-entry step. If seeking judgment, use /default-judgment after checking valid service, response time, notice, military-status requirements and proof of damages. A defendant seeking relief follows a different procedure. Confirm the actual court and stage before drafting.",
+  "official_link": "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf",
+  "reasoning": "reasoning/routes/default-request.md"
+ },
+ {
+  "command": "/demand-package",
+  "slug": "demand-package",
+  "title": "Full Demand Package with Exhibits",
+  "kind": "not-included",
+  "kind_label": "Not included in this library",
+  "what_to_do": "The source app assembled a demand letter and selected exhibits into one PDF. That feature is not part of this library. Use /demand (or /policylimits) for the letter and /demand-exhibits for the exhibit index; attach the actual records yourself."
+ },
+ {
+  "command": "/directed-verdict",
+  "slug": "directed-verdict",
+  "title": "Select Trial or Post-Verdict Motion",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "For a Virginia civil jury trial, identify the procedural stage and the ruling sought. The /strike template addresses a motion to strike the evidence under Rule 1:11; a post-verdict /jnov request requires separate statutory and preservation analysis. The federal JMOL label does not choose between them. Confirm the court, evidence closed, prior motions, verdict and applicable deadline before using either template.",
+  "official_link": "https://www.vacourts.gov/static/courts/scv/rulesofcourt.pdf",
+  "reasoning": "reasoning/routes/directed-verdict.md"
+ },
+ {
+  "command": "/exemption",
+  "slug": "exemption",
+  "title": "Garnishment or Lien Exemption Claim",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "Use the current official DC-454 (July 2026), including its reverse-side hearing request, for an applicable Virginia garnishment/lien exemption claim. Identify the actual court, parties, property and exemption; sign and submit to that court’s clerk. Do not replace the statutory notice and claim with a generic Word motion. Verify the correct procedure for other enforcement or exemption types.",
+  "official_link": "https://www.vacourts.gov/static/forms/district/dc454.pdf",
+  "reasoning": "reasoning/routes/exemption.md"
+ },
+ {
+  "command": "/ftca",
+  "slug": "ftca",
+  "title": "Claim for Damage, Injury, or Death (FTCA)",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (SF-95); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition. Keep the federal administrative-claim form separate from Virginia state-court documents.",
+  "form_id": "SF-95"
+ },
+ {
+  "command": "/garnishment",
+  "slug": "garnishment",
+  "title": "Garnishment Summons",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1486); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1486"
+ },
+ {
+  "command": "/garnishment-suggestion",
+  "slug": "garnishment-suggestion",
+  "title": "Suggestion for Summons in Garnishment",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1485); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1485"
+ },
+ {
+  "command": "/ifp",
+  "slug": "ifp",
+  "title": "Petition to Proceed Without Fees (IFP)",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1414); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1414"
+ },
+ {
+  "command": "/judgment-lien-update",
+  "slug": "judgment-lien-update",
+  "title": "Judgment Lien Docket — Subsequent Entries",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1462); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1462"
+ },
+ {
+  "command": "/malpractice-waiver",
+  "slug": "malpractice-waiver",
+  "title": "Professional Liability and Client Decision Review",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "Virginia Rule of Professional Conduct 1.8(h) prohibits ordinary prospective limitation of a lawyer’s malpractice liability. Its narrow exception concerns a lawyer’s employer-client independently represented in making the agreement; ordinary independent advice is not a general exception. Do not generate a malpractice protection waiver. If the purpose is to record actual advice and a client’s settlement-planning choice, use /snt-waiver, which does not release counsel; an existing malpractice claim requires separate ethics and legal review.",
+  "official_link": "https://www.vsb.org/common/Uploaded%20files/docs/rules-rpc-complete.pdf",
+  "reasoning": "reasoning/routes/malpractice-waiver.md"
+ },
+ {
+  "command": "/medaudit",
+  "slug": "medaudit",
+  "title": "Medical Records Audit Excel Export",
+  "kind": "not-included",
+  "kind_label": "Not included in this library",
+  "what_to_do": "The source app exported a spreadsheet audit from its stored medical records. That feature is not part of this library. For an editable summary drafted from actual records, use /medsummary."
+ },
+ {
+  "command": "/medicare-final",
+  "slug": "medicare-final",
+  "title": "Obtain Medicare Recovery Demand",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "BCRC issues the formal recovery demand after the required settlement information and related-payment review. Use /medicare-settlement-report for counsel’s supported settlement report and retain the actual demand when received. The MSPRP final conditional-payment process is a separate, tightly timed option under CMS’s current instructions; an interim conditional-payment amount is not necessarily the final debt. This command does not invent a CMS demand, balance, appeal deadline or clearance.",
+  "official_link": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process",
+  "reasoning": "reasoning/routes/medicare-final.md"
+ },
+ {
+  "command": "/medicare-rar",
+  "slug": "medicare-rar",
+  "title": "Obtain Medicare Rights and Responsibilities Letter",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "CMS/BCRC sends the Rights and Responsibilities letter after the case is established in the recovery process. Obtain and retain the letter for the actual beneficiary and case, and follow its current instructions. Use the representation and claim-notification templates (/medicare-bcrc, /medicare-notice) if a case must first be reported. A lawyer-drafted letter cannot be presented as CMS’s RAR letter, and no agency notice is generated here.",
+  "official_link": "https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process",
+  "reasoning": "reasoning/routes/medicare-rar.md"
+ },
+ {
+  "command": "/msa-report",
+  "slug": "msa-report",
+  "title": "Medicare Future-Medical Allocation Review",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "An allocation requires actual medical records, treatment recommendations, prescription information, cost methodology and claim-specific Medicare analysis. A qualified preparer must support those inputs and calculations. Confirm whether this is workers’ compensation or another claim type; CMS’s published WCMSA review process is not a universal liability-settlement approval system. No medical prognosis, life expectancy, allocation amount or CMS approval is generated by this command.",
+  "official_link": "https://www.cms.gov/medicare/coordination-benefits-recovery/workers-comp-set-aside-arrangements",
+  "reasoning": "reasoning/routes/msa-report.md"
+ },
+ {
+  "command": "/msa-submission",
+  "slug": "msa-submission",
+  "title": "CMS Workers Compensation MSA Submission",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "First confirm that the matter and proposal fit the current CMS workers’ compensation MSA review process. CMS recommends the WCMSA Portal and also describes paper/CD submission. Use the current Reference Guide and complete supported proposal, authorizations and medical/cost records. A cover letter alone is not a submission or approval, and a liability PI case must not be represented as eligible merely because it involves Medicare. This route provides instructions; it does not transmit anything.",
+  "official_link": "https://www.cms.gov/medicare/coordination-benefits-recovery/workers-comp-set-aside-arrangements/submission",
+  "reasoning": "reasoning/routes/msa-submission.md"
+ },
+ {
+  "command": "/notice-ack",
+  "slug": "notice-ack",
+  "title": "Select Service Acceptance or Waiver Process",
+  "kind": "choose-template",
+  "kind_label": "Choose the right procedure first",
+  "what_to_do": "Identify whether the recipient is accepting service, waiving service of a summons, or merely acknowledging delivery. These acts have different effects. For an applicable Virginia waiver request use the official waiver form (see /waiver-service); for actual acceptance use /acceptance-service after confirming the authorized signer and legal effect. Receipt alone is not proof of valid service, and this command does not substitute a California notice-and-acknowledgment procedure.",
+  "official_link": "https://www.vacourts.gov/forms/circuit/civil",
+  "reasoning": "reasoning/routes/notice-ack.md"
+ },
+ {
+  "command": "/notice-appeal",
+  "slug": "notice-appeal",
+  "title": "Notice of Appeal",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1345); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1345"
+ },
+ {
+  "command": "/partial-satisfaction",
+  "slug": "partial-satisfaction",
+  "title": "Certificate of Partial Satisfaction",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1501); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1501"
+ },
+ {
+  "command": "/pooled-trust",
+  "slug": "pooled-trust",
+  "title": "Pooled Special Needs Trust Joinder Review",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Obtain the selected nonprofit’s current master trust and joinder. Benefits counsel must review disability, settlor authority, sole-benefit administration, fees, remainder/Medicaid provisions and transfer consequences for the actual beneficiary. Pooled-trust treatment is not identical to the under-65 self-settled trust exception, and transfers after age 65 can still carry penalties. A generic Word joinder cannot enroll a beneficiary in an unidentified provider’s trust.",
+  "official_link": "https://secure.ssa.gov/poms.nsf/lnx/0501120203",
+  "reasoning": "reasoning/routes/pooled-trust.md"
+ },
+ {
+  "command": "/publication",
+  "slug": "publication",
+  "title": "Affidavit for Order of Publication",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1435); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1435"
+ },
+ {
+  "command": "/qsf",
+  "slug": "qsf",
+  "title": "Qualified Settlement Fund Establishment",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Coordinate the fund instrument and proposed approval order with the fund administrator and tax counsel. Verify qualifying claims, a governmental order or approval with continuing jurisdiction, segregated assets, administrator powers, distributions, tax reporting and termination. A private agreement alone does not establish every requirement of a qualified settlement fund. The responsible team must supply the actual claims, authority, fund terms and approval route before an operative instrument is prepared.",
+  "official_link": "https://www.irs.gov/instructions/i1120sf",
+  "reasoning": "reasoning/routes/qsf.md"
+ },
+ {
+  "command": "/qualified-assignment",
+  "slug": "qualified-assignment",
+  "title": "Qualified Assignment Provider Agreement",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Obtain and review the proposed assignee’s agreement with the structured-settlement and tax advisers. Confirm the assignor, assignee, obligation, eligible underlying recovery, fixed payment terms, funding asset and when the original obligor is released. Qualification under 26 U.S.C. § 130 is not established by the document title. The provider’s terms must match the settlement and any approval order; no assignment is generated or treated as accepted here.",
+  "official_link": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section130&num=0&edition=prelim",
+  "reasoning": "reasoning/routes/qualified-assignment.md"
+ },
+ {
+  "command": "/release-judgment-lien",
+  "slug": "release-judgment-lien",
+  "title": "Authorization for Release of Judgment Lien",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1463); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1463"
+ },
+ {
+  "command": "/satisfaction",
+  "slug": "satisfaction",
+  "title": "Certificate and Affidavit of Satisfaction",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1505); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1505"
+ },
+ {
+  "command": "/service-other",
+  "slug": "service-other",
+  "title": "Proof of Service Other Than by Sheriff",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1407); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1407"
+ },
+ {
+  "command": "/settlement-trust",
+  "slug": "settlement-trust",
+  "title": "Settlement Preservation Trust Design",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Identify the beneficiary’s capacity, property, benefits, intended distribution rights, trustee, fees, creditor exposure and tax objectives before selecting a trust instrument. Virginia trust-creation requirements do not by themselves establish benefit protection or asset protection. Have trust counsel prepare or adapt the operative terms and obtain any settlement-court approval. A generic preservation trust must not be substituted for a special needs trust or treated as automatically protecting eligibility.",
+  "official_link": "https://law.lis.virginia.gov/vacode/64.2-720/",
+  "reasoning": "reasoning/routes/settlement-trust.md"
+ },
+ {
+  "command": "/sol-check",
+  "slug": "sol-check",
+  "title": "Calculate statute of limitations for this case",
+  "kind": "not-included",
+  "kind_label": "Not included in this library",
+  "what_to_do": "A limitations calculator in the source app. Not included. Compute limitations and notice deadlines from the governing statute and documented events, with attorney review."
+ },
+ {
+  "command": "/special-needs-trust",
+  "slug": "special-needs-trust",
+  "title": "Self-Settled Special Needs Trust Design",
+  "kind": "specialist",
+  "kind_label": "Specialist or provider work",
+  "what_to_do": "Use benefits and trust counsel to prepare the actual self-settled trust. Verify the beneficiary’s disability and age, funding source, lawful settlor, sole-benefit terms, trustee powers, Medicaid reimbursement at death, termination provisions and the requirements of each benefit program. The individual trust exception under 42 U.S.C. § 1396p(d)(4)(A) differs from a pooled trust. Obtain required court approval and program review; the name special needs trust does not establish eligibility.",
+  "official_link": "https://secure.ssa.gov/poms.nsf/lnx/0501120203",
+  "reasoning": "reasoning/routes/special-needs-trust.md"
+ },
+ {
+  "command": "/ssa-consent",
+  "slug": "ssa-consent",
+  "title": "SSA Consent for Release of Information",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "Use the current official SSA-3288 (April 2026) and obtain the authorized person’s actual signature. Specify records and dates; do not request a blanket entire file. Minor medical records and detailed earnings histories use different SSA procedures. This entry points to the publisher form; no filler is included.",
+  "official_link": "https://www.ssa.gov/forms/ssa-3288.pdf",
+  "reasoning": "reasoning/routes/ssa-consent.md"
+ },
+ {
+  "command": "/subpoena",
+  "slug": "subpoena",
+  "title": "Subpoena Duces Tecum (Civil)",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1437); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition. The source kept a Word replica because the downloaded official PDF had no fillable fields; use the official form for filing.",
+  "form_id": "CC-1437"
+ },
+ {
+  "command": "/subpoena-witness",
+  "slug": "subpoena-witness",
+  "title": "Subpoena for Witness",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1342); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1342"
+ },
+ {
+  "command": "/summons",
+  "slug": "summons",
+  "title": "Summons",
+  "kind": "clerk-process",
+  "kind_label": "Clerk-issued process",
+  "what_to_do": "Under Virginia Rule 3:5 the Circuit Court clerk issues the civil summons when the complaint is filed. Obtain the issued process from that clerk and arrange lawful service with the complaint. A drafted Word document is not issued process; CC-1433 requests waiver of service and does not replace a summons. For another Virginia court, identify the court and obtain its issued process."
+ },
+ {
+  "command": "/summons-interrogatories",
+  "slug": "summons-interrogatories",
+  "title": "Summons to Answer Interrogatories",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1481); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1481"
+ },
+ {
+  "command": "/tax-records",
+  "slug": "tax-records",
+  "title": "Request for Transcript of Tax Return (IVES)",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (IRS Form 4506-C); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition. Verify the current IRS form, requester authorization and supported fields.",
+  "form_id": "IRS Form 4506-C"
+ },
+ {
+  "command": "/tort-claim-rejection",
+  "slug": "tort-claim-rejection",
+  "title": "Obtain Actual Agency Rejection or Notice",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "Identify the claim, sovereign or agency, governing statute and actual decision requested. Any official rejection or right-to-sue notice must come from the authorized issuer; a drafting template cannot create it. Virginia state and local tort notice/waiting rules are not a universal right-to-sue-letter process. Preserve the actual agency communication and calculate deadlines from the governing law and documented events. For claimant notice, review /govtclaim instead of generating an agency response.",
+  "official_link": "https://law.lis.virginia.gov/vacode/8.01-195.7/",
+  "reasoning": "reasoning/routes/tort-claim-rejection.md"
+ },
+ {
+  "command": "/w2-settlement",
+  "slug": "w2-settlement",
+  "title": "Settlement Wage Reporting",
+  "kind": "official-process",
+  "kind_label": "Official agency or court process",
+  "what_to_do": "For an actual wage component, coordinate with the responsible employer or payer to determine withholding and use the correct tax-year official Form W-2 and applicable transmittal/e-filing process. A settlement label alone does not establish wages. Reconcile the allocation, payment date, employee details and payroll records; do not replace the wage form with a Word letter. This route supplies IRS instructions only.",
+  "official_link": "https://www.irs.gov/instructions/iw2w3",
+  "reasoning": "reasoning/routes/w2-settlement.md"
+ },
+ {
+  "command": "/waiver-service",
+  "slug": "waiver-service",
+  "title": "Notice and Request for Waiver of Service",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1433); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1433"
+ },
+ {
+  "command": "/writ",
+  "slug": "writ",
+  "title": "Clerk Issued Writ of Fieri Facias",
+  "kind": "clerk-process",
+  "kind_label": "Clerk-issued process",
+  "what_to_do": "Request the appropriate writ of fieri facias from the issuing clerk under Virginia Code §§ 8.01-466 and 8.01-474. Confirm the judgment, enforceability, stay and requested execution. CC-1418 is an affidavit for service on the Secretary of the Commonwealth, not a writ of execution.",
+  "reasoning": "reasoning/routes/writ.md"
+ },
+ {
+  "command": "/writ-possession",
+  "slug": "writ-possession",
+  "title": "Writ of Possession",
+  "kind": "official-form",
+  "kind_label": "Official form",
+  "what_to_do": "Official form. The source app filled the publisher's official form (CC-1478); review of that filler was deferred and no form or filler is included here. Get the current form from the publisher and complete it there. Verify the form number and edition.",
+  "form_id": "CC-1478"
+ },
+ {
+  "command": "/debtor-exam-order",
+  "slug": "debtor-exam-order",
+  "title": "Alias of /debtorexam",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/debtorexam",
+  "what_to_do": "Use /debtorexam (Summons for Judgment Debtor Interrogatories). The source treated /debtor-exam-order as the same document; no separate draft exists. That entry is an official-form or process route, not a drafting template."
+ },
+ {
+  "command": "/default",
+  "slug": "default",
+  "title": "Alias of /default-judgment",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/default-judgment",
+  "what_to_do": "Use /default-judgment (Motion for Default Judgment). The source treated /default as the same document; no separate draft exists."
+ },
+ {
+  "command": "/dismissal",
+  "slug": "dismissal",
+  "title": "Alias of /order-dismissal",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/order-dismissal",
+  "what_to_do": "Use /order-dismissal (Proposed Order of Dismissal After Settlement). The source treated /dismissal as the same document; no separate draft exists."
+ },
+ {
+  "command": "/erisa-notice",
+  "slug": "erisa-notice",
+  "title": "Alias of /erisa",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/erisa",
+  "what_to_do": "Use /erisa (Health Plan Recovery Claim Notice). The source treated /erisa-notice as the same document; no separate draft exists."
+ },
+ {
+  "command": "/fee-waiver",
+  "slug": "fee-waiver",
+  "title": "Alias of /ifp",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/ifp",
+  "what_to_do": "Use /ifp (Petition to Proceed Without Fees (IFP)). The source treated /fee-waiver as the same document; no separate draft exists. That entry is an official-form or process route, not a drafting template."
+ },
+ {
+  "command": "/govt-claim-lit",
+  "slug": "govt-claim-lit",
+  "title": "Alias of /govtclaim",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/govtclaim",
+  "what_to_do": "Use /govtclaim (Virginia Tort Claims Act Notice). The source treated /govt-claim-lit as the same document; no separate draft exists."
+ },
+ {
+  "command": "/ime-letter",
+  "slug": "ime-letter",
+  "title": "Alias of /ime-advice",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/ime-advice",
+  "what_to_do": "Use /ime-advice (Client Advice About Requested Medical Examination). The source treated /ime-letter as the same document; no separate draft exists."
+ },
+ {
+  "command": "/medicare-notify",
+  "slug": "medicare-notify",
+  "title": "Alias of /medicare-settlement-report",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/medicare-settlement-report",
+  "what_to_do": "Use /medicare-settlement-report (Medicare Settlement Reporting Letter). The source treated /medicare-notify as the same document; no separate draft exists."
+ },
+ {
+  "command": "/medpay-notice",
+  "slug": "medpay-notice",
+  "title": "Alias of /medpay",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/medpay",
+  "what_to_do": "Use /medpay (Response to Asserted Medical Payments Reimbursement Claim). The source treated /medpay-notice as the same document; no separate draft exists."
+ },
+ {
+  "command": "/non-engagement",
+  "slug": "non-engagement",
+  "title": "Alias of /declination",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/declination",
+  "what_to_do": "Use /declination (Nonengagement Letter). The source treated /non-engagement as the same document; no separate draft exists."
+ },
+ {
+  "command": "/rfd",
+  "slug": "rfd",
+  "title": "Alias of /rfp",
+  "kind": "alias",
+  "kind_label": "Alias of another entry",
+  "alias_of": "/rfp",
+  "what_to_do": "Use /rfp (Plaintiff’s First Requests for Production to Defendant). The source treated /rfd as the same document; no separate draft exists."
+ }
+]
